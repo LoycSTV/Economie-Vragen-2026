@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {3.4}Afschrijvingen en Winstoptimalisatie}{7}{}%
 \contentsline {subsection}{\numberline {3.5}Afschrijvingsmethoden}{7}{}%
 \contentsline {subsection}{\numberline {3.6}NHW en IRR}{7}{}%
-\contentsline {subsection}{\numberline {3.7}Schema Investeringsanalyse}{7}{}%
+\contentsline {subsection}{\numberline {3.7}Schema Investeringsanalyse}{8}{}%
 \contentsline {subsection}{\numberline {3.8}Casus: 10 jaar investering}{8}{}%
 \contentsline {subsection}{\numberline {3.9}Inflatie}{8}{}%
 \contentsline {subsection}{\numberline {3.10}Subsidies}{8}{}%
