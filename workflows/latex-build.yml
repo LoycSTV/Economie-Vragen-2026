@@ -1,0 +1,77 @@
+name: Build LaTeX
+
+on:
+  push:
+    branches: [ main, master, MAIN ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main, master, MAIN ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live (minimal set)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-recommended texlive-latex-extra texlive-xetex \
+            texlive-fonts-recommended texlive-fonts-extra texlive-pictures \
+            texlive-science texlive-bibtex-extra biber texlive-lang-european \
+            texlive-plain-generic texlive-luatex \
+            latexmk poppler-utils
+
+      - name: Find and Build LaTeX documents
+        run: |
+          # Vind alle hoofddocumenten (exclusief subfiles en templates)
+          find . -type f -name "*.tex" \
+            ! -path "*/.git/*" \
+            ! -path "*/assets/*" \
+            ! -name "school-macros.sty" \
+            ! -name "*-macros.sty" \
+            ! -name "Examenoefening.tex" \
+            -exec grep -l "\\documentclass" {} \; > main_docs.txt
+          
+          echo "## Build Results 📊" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Document | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
+          
+          # Build elk gevonden document
+          while IFS= read -r texfile; do
+            dir=$(dirname "$texfile")
+            file=$(basename "$texfile")
+            name=$(basename "$texfile" .tex)
+            
+            echo "Building: $texfile"
+            
+            cd "$dir"
+            if latexmk -pdf -interaction=nonstopmode -file-line-error "$file" 2>&1 | tee build.log; then
+              echo "| $name | ✅ Success |" >> $GITHUB_STEP_SUMMARY
+              echo "✅ Success: $texfile"
+            else
+              echo "| $name | ❌ Failed |" >> $GITHUB_STEP_SUMMARY
+              echo "❌ Failed: $texfile"
+              # Toon laatste regels van de log voor debugging
+              tail -20 build.log || true
+            fi
+            cd - > /dev/null
+          done < main_docs.txt
+
+      - name: Upload built PDFs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: built-pdfs
+          retention-days: 90
+          if-no-files-found: warn
+          path: |
+            **/*.pdf
+            !**/assets/**
+            !**/.git/**
