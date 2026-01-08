@@ -5,6 +5,7 @@
 \usepackage{geometry}
 \usepackage{parskip}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{xcolor} % Nodig voor kleuren
 
 % Marges instellen
@@ -45,8 +46,12 @@ De onderstaande figuur stelt de PLC voor. Vul de fasen (1 t/m 5) aan en zet de a
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Fase 1: ...
-Fase 2: ...
+\begin{figure}[h] % [h] staat voor 'here', probeer de figuur hier te zetten
+    \centering % Zet de foto in het midden van de pagina
+    \includegraphics[width=0.6\textwidth]{PLC.png} % Pas de breedte aan
+    \caption{Product Life Cycle} % Het bijschrift
+    \label{fig:PLC} % Hiermee kun je in de tekst verwijzen naar de figuur
+\end{figure}
 \end{antwoord}
 
 
@@ -55,7 +60,7 @@ Bespreek kort de marketingdoelstelling en de prijszetting in elke fase van de PL
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Er zijn verschillende marketingdoelstellingen , overleven , winstmaximalisatie , marktaandeel leiderschap , kwaliteit leiderschap. Tijdens de fase van de PLC worden deze allemaal toegepast. De product development stage laten we even vallen want hier wordt nog niks verkocht. Bij de introductie is het doel om bekendheid te creëren en klanten aan te trekken. De prijszetting kan een penetratieprijsstrategie zijn om snel marktaandeel te winnen of een afroomprijsstrategie om de vroege adopters te benutten. In de groeifase is het doel om marktaandeel te vergroten en de winst te maximaliseren. Prijzen kunnen stabiel blijven of licht dalen om concurrentie aan te gaan. Tijdens de volwassenheidsfase is het doel om marktaandeel te behouden en winstgevendheid te maximaliseren. Prijzen kunnen verder dalen als reactie op concurrentie. In de neergangsfase is het doel om kosten te minimaliseren en winst te behouden. Prijzen kunnen worden verlaagd om resterende vraag aan te trekken of producten uit de markt te halen (overleven).
 \end{antwoord}
 
 
@@ -64,16 +69,29 @@ Wat is elasticiteit van de vraag? Leg uit aan de hand van een schets en een voor
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Het toont aan hoe hard de de vraag van een product/dienst kan variëren met een variërende verkoopprijs. Als de verkoopprijs harder kan variëren spreken we over inelastisch gedrag , als de vraag harder variërd bij een lichtere verkoopprijs variatie dus dan spreken we over elastisch gedrag.
+\begin{figure}[H] % Gebruik H om de figuur exact hier te plaatsen (vereist \usepackage{float})
+    \centering % Zet de foto in het midden van de pagina
+    \includegraphics[width=0.8\textwidth]{elsticitiet.png} % Pas de breedte aan
+    \caption{Elasticiteit} % Het bijschrift
+    \label{fig:Elasticiteit} % Hiermee kun je in de tekst verwijzen naar de figuur
+\end{figure}
 \end{antwoord}
-
 
 \subsection{De 5 Marketingconcepten}
 Geef de 5 marketingconcepten. Bespreek elk concept kort en geef een voorbeeld van elk.
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+\textbf{1. Productieconcept} : hierbij worden hoge productie snelheden gewenst aan een zo laag mogelijke prijs , typisch als de vraag hoger is dan aanbod , nadeel is dat er te hard gefocust wordt op productie , te weinig op klant. (voorbeeld Ford Model T)
+\newline
+\textbf{2. Productconcept} : hierbij ligt de focus op een product van hoge kwaliteit , typisch als gestreefd wordt naar het beste van het beste op de markt , nadeel is dat er te hard gefocust wordt op het product zelf en niet op de klant. (voorbeeld Apple iPhone)
+\newline
+\textbf{3. Verkoopconcept} : hierbij ligt de focus op zoveel mogelijk verkopen van je product door te promoten vaak , typisch als er meer aanbod dan vraag is , nadeel is dat er te hard gefocust wordt op verkopen en niet op klantbehoeften. (voorbeeld verzekeringsmaatschappijen)
+\newline
+\textbf{4. Marketingconcept} : hierbij ligt de focus op de klantbehoeften en wensen , typisch als er veel concurrentie is op de markt , nadeel is dat het tijdrovend en duur kan zijn om klantbehoeften te onderzoeken en het bedrijf hun eigen innovatie kan remmen. (voorbeeld IKEA)
+\newline
+\textbf{5. Maatschappelijk marketingconcept} : hierbij ligt de focus op het creëren van waarde voor klanten op een manier die ook goed is voor de samenleving als geheel , typisch als er veel aandacht is voor duurzaamheid en ethiek , nadeel is dat het moeilijk kan zijn om een balans te vinden tussen winstgevendheid en maatschappelijke verantwoordelijkheid. (voorbeeld Patagonia)
 \end{antwoord}
 
 
@@ -82,7 +100,7 @@ Definieer 'marketingmanagementconcept'. Wat is het belang ervan voor consument e
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Het marketingmanagementconcept is een benadering waarbij bedrijven zich richten op het identificeren en voldoen aan de behoeften en wensen van hun doelmarkt om zo hun doelen te bereiken. Het belang ervan ligt in het creëren van waarde voor zowel de consument als de organisatie, wat leidt tot klanttevredenheid, loyaliteit en uiteindelijk winstgevendheid voor het bedrijf. De 5 belangrijkste concepten zijn in de vraag hierboven besproken.
 \end{antwoord}
 
 
@@ -94,7 +112,17 @@ Typ hier je antwoord...
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Bedrijven kunnen vaak niet iedereen als klant hebben , daarom wordt de maatschappij opgedeeld in segmentatievariabelen. Dit zijn eigelijk groepjes van mensen met gelijkwaardige kenmerken waarop gefocust kan worden om zo een product of dienst te verkopen. De belangrijkste categorieën zijn :
+\newline
+\textbf{1. Demografische variabelen} : leeftijd , geslacht , inkomen , opleiding , beroep.
+\newline
+\textbf{2. Geografische variabelen} : locatie , klimaat , bevolkingsdichtheid
+\newline
+\textbf{3. Psychografische variabelen} : levensstijl , persoonlijkheid , waarden
+\newline
+\textbf{4. Gedragsmatig} : koopgedrag , gebruiksfrequentie , merkentrouw
+\newline
+Clustering van doelgroepen is het proces waarbij bedrijven deze segmentatievariabelen gebruiken om specifieke groepen consumenten te identificeren die vergelijkbare behoeften en gedragingen vertonen. Door deze groepen te clusteren, kunnen bedrijven gerichte marketingstrategieën ontwikkelen die beter aansluiten bij de wensen van elke doelgroep, wat leidt tot effectievere communicatie en hogere conversieratio's.
 \end{antwoord}
 
 
@@ -103,7 +131,7 @@ Wat wordt bedoeld met een \textbf{penetratieprijsstrategie} en een \textbf{afroo
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+De afstroomprijsstrategie is een strategie waarbij een bedrijf een product lanceert met een hoge prijs en deze later gaat dalen. Dit werkt goed bij bedrijven die al een groot imago hebben zodat hun trouwe klanten eerst kunnen kopen. De penetratiestrategie is een strategie waarbij een bedrijf een product lanceert met een lage prijs om snel marktaandeel te winnen. Dit werkt goed in markten met veel concurrentie of als het product nieuw is en klanten moet aantrekken.
 \end{antwoord}
 
 
@@ -112,7 +140,7 @@ Wat wordt bedoeld met een 'prijsvork'?
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Het is eigenlijk een range van een minimale en een maximale prijs waarvoor een klant voor een product wilt betalen. Minimaal omdat anders de klant de kwaliteit niet vertrouwd , maximaal omdat dat het max is dat de klant wilt betalen. Vaak wordt deze prijsvork bepaald door marktonderzoek.
 \end{antwoord}
 
 
@@ -121,7 +149,11 @@ Ondernemerschap, Maatschappelijke ontwikkeling, Investeringen, Productontwikkeli
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Wa een domme vraag? In 1 woord? \textbf{ECONOMIE}.
+\newline
+Hier is wat AI zegt :
+\newline
+Al deze concepten zijn met elkaar verbonden in het bredere kader van bedrijfsvoering en economische groei. Ondernemerschap stimuleert innovatie en productontwikkeling, wat leidt tot nieuwe producten en diensten die waarde toevoegen voor consumenten. Maatschappelijke ontwikkeling beïnvloedt de behoeften en verwachtingen van consumenten, wat bedrijven ertoe aanzet om hun producten en diensten aan te passen. Investeringen zijn cruciaal voor het financieren van deze innovaties en het uitbreiden van bedrijfsactiviteiten. Kostprijscalculatie helpt bedrijven om hun kosten te begrijpen en winstgevendheid te waarborgen, wat essentieel is voor het creëren van gezonde bedrijven. Gezonde bedrijven dragen bij aan economische welvaart door banen te creëren, belastingen te betalen en bij te dragen aan de gemeenschap. Kortom, deze elementen werken samen om een dynamische en duurzame economische omgeving te bevorderen.
 \end{antwoord}
 
 
@@ -130,7 +162,14 @@ Bespreek de 4P's in het kader van de 'Marketingmix'.
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+De 4P's van de marketingmix zijn Product, Prijs, Plaats en Promotie.
+\newline
+\textbf{Product} : Dit verwijst naar het fysieke product of de dienst die een bedrijf aanbiedt aan zijn klanten. Het omvat aspecten zoals ontwerp, kwaliteit, functies, merknaam en verpakking.
+\textbf{Prijs} : Dit verwijst naar de hoeveelheid geld die klanten moeten betalen om het product of de dienst te verkrijgen. Prijsstrategieën kunnen variëren afhankelijk van factoren zoals concurrentie, kosten en klantperceptie van waarde.
+\newline
+\textbf{Plaats} : Dit verwijst naar de distributiekanalen en locaties waar het product of de dienst beschikbaar is voor klanten. Het omvat beslissingen over winkels, online verkoop, logistiek en voorraadbeheer.
+\newline
+\textbf{Promotie} : Dit verwijst naar de marketingcommunicatieactiviteiten die een bedrijf gebruikt om zijn product of dienst onder de aandacht van klanten te brengen. Dit kan reclame, verkoopbevordering, public relations en persoonlijke verkoop omvatten.
 \end{antwoord}
 
 
@@ -139,7 +178,23 @@ Welke factoren zijn van belang voor de prijszetting? Splits ze op naar 'interne'
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+\textbf{Interne factoren} : marketingdoelstellingen , marketingstrategieën , kosten , prijszetting
+\newline
+-Die marketingdoelstellingen zijn die inspanningen dat een bedrijf kan doen die we bij de bespreking van de PLC zagen : overleven , winstmaximalisatie , marktaandeel leiderschap , kwaliteit leiderschap.
+\newline
+-Die marketingstrategieën zijn de 4P's van de marketingmix : product , prijs , plaats , promotie.
+\newline
+-Kosten zijn dingen zoals vaste kosten en variabele kosten. 
+\newline
+-Prijszetting met bvb : de prijsvork.
+\newline
+\textbf{Externe factoren} : de aard van de markt , vraag , concurrenten , economie....
+\newline
+-De aard van de markt kan zijn : volkomen concurrentie , monopolistische concurrentie , oligopolie , monopolie.
+\newline
+-Ook heeft de elasticiteit van de vraag een grote invloed op prijszetting.
+\newline
+-Andere factoren zoals sociaal , cultureel , wetgeving , herverkopers , .... kunnen ook een rol spelen
 \end{antwoord}
 
 \newpage
@@ -287,7 +342,7 @@ Wat is het belang van 'Afschrijvingen' in functie van winstoptimalisatie? Leg ui
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Afschrijvingen verminderen de boekhoudkundige winst van een bedrijf, wat resulteert in lagere belastingen. Door afschrijvingen strategisch te plannen, kan een bedrijf zijn winst optimaliseren door de belastingdruk te verlagen en zo meer kapitaal beschikbaar te houden voor investeringen of andere doeleinden.
 \end{antwoord}
 
 
@@ -326,7 +381,17 @@ Hoe voer je een 'Investeringsanalyse' uit? Leg uit aan de hand van een schema.
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+1. Bepaal de initiële investering.
+\newline
+2. Bepaal de jaarlijkse kassatromen (inkomsten - uitgaven).
+\newline
+3. Bepaal de restwaarde aan het einde van de levensduur.
+\newline
+4. Bepaal de discontovoet (rentevoet).
+\newline
+5. Bereken de Netto Huidige Waarde (NHW) of Internal Rate of Return (IRR).
+\newline
+6. Maak een beslissing op basis van de NHW of IRR.
 \end{antwoord}
 
 
@@ -366,7 +431,7 @@ Hoe verhouden 'Verkoopprijs', 'Totale Kostprijs', 'Industriële Kostprijs' en 'E
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+De verkoopprijs is de prijs waarvoor een product aan klanten wordt verkocht. De totale kostprijs bevat alle kosten die gemaakt worden om het product te MAKEN en te VERKOPEN, dus zonder winst. De Industriële kostprijs omvat alleen kosten die direct gerelateerd zijn aan productie. De evenredige kostprijs is de kost van alle variabele kosten per eenheid, deze word gebruikt om de marge te bepalen.
 \end{antwoord}
 
 
@@ -375,7 +440,7 @@ We spreken over 'Historische Kostprijzen' en 'Standaardkostprijzen'. Wat is het 
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Historische kostprijzen zijn gebaseerd op werkelijke kosten die in het verleden zijn gemaakt, terwijl standaardkostprijzen vooraf bepaalde kosten zijn die worden gebruikt voor budgettering en kostenbeheersing. Het belang van standaardkostprijzen ligt in het vergemakkelijken van kostencontrole en prestatie-evaluatie, terwijl historische kostprijzen nuttig zijn voor het analyseren van werkelijke prestaties (een benchmark).
 \end{antwoord}
 
 
@@ -384,7 +449,7 @@ Wat wordt bedoeld met een 'Verdeelsleutel' in het kader van kostprijscalculatie?
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Een verdeelsleutel word gebruikt om de indirecte kosten als toeslag toe te berekenen aan de kostprijs van een product. Verdeelsleutel bepaald welke sectoren of afdelingen welke kosten moeten dragen. Bijvoorbeeld, als een fabriek 1000 euro aan indirecte kosten heeft en er 500 geproduceerde eenheden zijn, dan is de verdeelsleutel 2 euro per eenheid (1000/500).
 \end{antwoord}
 
 
@@ -393,7 +458,7 @@ Wat zijn 'Directe Kosten' en 'Indirecte Kosten'? Wat is het belang ervan bij kos
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Directe kosten zijn kosten die gelinkt worden aan de productie van een specifiek product (zoals grondstoffen en directe arbeid). Indirecte kosten zijn kosten die niet direct aan een specifiek product kunnen worden toegeschreven (zoals huur, elektriciteit, administratiekosten). Het belang van het onderscheiden van deze kosten ligt in het nauwkeurig berekenen van de kostprijs van een product. Problemen kunnen ontstaan bij het toewijzen van indirecte kosten, omdat dit subjectief kan zijn en kan leiden tot onnauwkeurige kostprijzen.
 \end{antwoord}
 
 
@@ -402,7 +467,7 @@ Wat zijn 'Vaste Kosten' en 'Variabele Kosten'? Wat is het belang ervan bij kostp
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Vaste kosten staan vast, veranderen niet met de productiehoeveelheid (zoals huur, salarissen). Variabele kosten veranderen wel met de productiehoeveelheid (zoals grondstoffen, directe arbeid). Het belang van het onderscheiden van deze kosten ligt in het begrijpen van hoe kosten zich gedragen bij veranderingen in productievolumes, wat essentieel is voor kostprijscalculatie en winstoptimalisatie.
 \end{antwoord}
 
 
@@ -411,7 +476,7 @@ Kostprijscalculatie en winstgevendheid van een bepaald product in het assortimen
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Ja, er is een relatie. Kostprijscalculatie helpt bij het bepalen van de kostprijs van een product, wat essentieel is voor het vaststellen van de verkoopprijs. Als de verkoopprijs hoger is dan de kostprijs, is het product winstgevend. Bijvoorbeeld, als de kostprijs van een product 50 euro is en het wordt verkocht voor 70 euro, dan is de winst per eenheid 20 euro.
 \end{antwoord}
 
 
@@ -420,7 +485,7 @@ Leg uit: 'Break-Even Point'.
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Het punt waarbij je net geen winst of verlies maakt. Dit is het punt waarop de totale opbrengsten gelijk zijn aan de totale kosten.
 \end{antwoord}
 
 
@@ -433,7 +498,7 @@ Wat wordt bedoeld met 'ABC costing'?
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+ABC (Activity Based Costing) is een elegantere methode voor het verdelen van de kosten over producten of diensten. In tegenstelling tot traditionele methoden, die vaak een enkele verdeelsleutel gebruiken, identificeert ABC de verschillende activiteiten die kosten veroorzaken en wijst deze kosten toe op basis van het daadwerkelijke gebruik van die activiteiten door producten of diensten. Deze methode van kostenverdeling is wel complexer maar biedt een eerlijker zicht in wat de kostprijs van een product of dienst is.
 \end{antwoord}
 
 
@@ -442,7 +507,9 @@ Wat wordt bedoeld met een 'Afwijkingsanalyse' in het kader van kostprijscalculat
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+IS DIT TE KENNEN?
+\newline
+Afwijkingsanalyse is het proces van het vergelijken van werkelijke kosten met de standaard- of budgetkosten om verschillen (afwijkingen) te identificeren. Het nut ervan ligt in het helpen van bedrijven om inefficiënties te identificeren, kostenbeheersing te verbeteren en betere beslissingen te nemen op basis van kostenprestaties.
 \end{antwoord}
 
 
@@ -451,7 +518,7 @@ Wat is het verschil tussen 'Traditionele Kostprijscalculatie' en 'Target Costing
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Bij traditionele kostprijscalculatie word eerst het proces van het maken van het product gedaan en daarna de kosten hiervan bepaalt. Bij Target Costing word eerst de verkoopprijs bepaald op basis van markt- en klantbehoeften, daarna word de gewenste winst afgetrokken om zo de target kostprijs te bepalen. Vervolgens word het product ontworpen en geproduceerd binnen deze kostprijs.
 \end{antwoord}
 
 \newpage
@@ -464,7 +531,7 @@ Waarom worden 'Ratio-analyses' gebruikt binnen het Financieel Management? Wat zi
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Ratio-analyses worden gebruikt om de financiële gezondheid en prestaties van een bedrijf te beoordelen door verschillende financiële indicatoren te vergelijken. Ze helpen bij het identificeren van trends, het vergelijken met concurrenten en het nemen van geïnformeerde beslissingen. Beperkingen zijn onder andere dat ze afhankelijk zijn van historische gegevens, kunnen worden beïnvloed door boekhoudkundige methoden en niet altijd een volledig beeld geven van de operationele efficiëntie of marktomstandigheden.
 \end{antwoord}
 
 
@@ -473,7 +540,7 @@ Wat is een 'Balance Sheet' (Balans)? Leg uit.
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Het is een overzicht van de financiële situatie van een bedrijf op een bepaald moment. Het toont wat het bedrijf bezit (activa), wat het verschuldigd is (passiva) en het eigen vermogen van de aandeelhouders.
 \end{antwoord}
 
 
@@ -482,7 +549,7 @@ Wat is het essentiële verschil tussen de 'Balans' en de 'Resultatenrekening'?
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+De balans geeft een momentopname van de financiële positie van een bedrijf op een bepaald tijdstip, terwijl de resultatenrekening (of winst-en-verliesrekening) de financiële prestaties van het bedrijf over een bepaalde periode weergeeft, inclusief inkomsten en uitgaven.
 \end{antwoord}
 
 
@@ -491,7 +558,7 @@ Bespreek de 'Jaarrekening'. Wat zijn de essentiële elementen?
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+De jaarrekening bestaat uit drie essentiële elementen: de balans, de resultatenrekening en het kasstroomoverzicht. De balans toont de activa, passiva en het eigen vermogen van het bedrijf op een bepaald moment. De resultatenrekening geeft inzicht in de inkomsten, kosten en winst of verlies over een bepaalde periode. Het kasstroomoverzicht laat zien hoe geld binnenkomt en uitgaat, wat belangrijk is voor het beoordelen van de liquiditeit van het bedrijf.
 \end{antwoord}
 
 
@@ -500,7 +567,7 @@ Wat is het verschil tussen een 'Horizontale' en 'Verticale' analyse bij financi�
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+Horizontale analyse vergelijkt financiële gegevens over meerdere perioden om trends en veranderingen in prestaties te identificeren. Verticale analyse daarentegen bekijkt de verhouding van elk item op een financiële verklaring ten opzichte van een basisitem binnen dezelfde periode, waardoor de structuur van de financiële verklaring wordt geanalyseerd.
 \end{antwoord}
 
 
@@ -509,7 +576,13 @@ Geef 4 ratio's en bespreek deze. (Je mag vrij kiezen dewelke).
 
 \begin{antwoord}
 % TYP HIERONDER JE ANTWOORD
-Typ hier je antwoord...
+1. (Liquiditeitsratio) Current Ratio: Dit meet de liquiditeit van een bedrijf door de verhouding tussen vlottende activa en vlottende passiva te berekenen. Een ratio boven 1 duidt op voldoende kortetermijnmiddelen om verplichtingen te dekken.
+\newline
+2. (Solvabiliteitsratio) Debt ratio: Dit meet de financiële hefboomwerking door de verhouding tussen totale schulden en totale activa te berekenen. Een hogere ratio kan wijzen op een hoger risico voor schuldeisers.
+\newline
+3. Schuldenratio: Dit meet de verhouding tussen vreemd vermogen en eigen vermogen. Het geeft inzicht in de financiële structuur van het bedrijf en het risico voor aandeelhouders.
+\newline
+4. Koers-winst ratio (K/W ratio): Dit meet de waardering van een aandeel door de verhouding tussen de marktprijs per aandeel en de winst per aandeel te berekenen. Een hogere K/W ratio kan wijzen op hoge verwachtingen van toekomstige groei.
 \end{antwoord}
 
 \end{document}
